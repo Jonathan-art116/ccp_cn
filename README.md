@@ -5,7 +5,7 @@ uvicorn main:app --reload
 ## Swagger Url
 Uvicorn running on http://127.0.0.1:8000
 ```shell 
-http://127.0.0.1:8000/docs#/
+http://127.0.0.1:8000/docs
 ```
 
 
