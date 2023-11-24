@@ -18,7 +18,7 @@ from tools.twenty_four import find_24
 router = APIRouter(tags=['calc'])
 
 
-@router.get("/calc/q1/tax/{monthly_salary}")
+@router.get("/calc/q1/tax/")
 def get_net_income(monthly_salary: int):
     social_insurance, housing_fund, medical_insurance, unemployment_insurance, \
     injury_insurance, maternity_insurance, tax, net_income = calculate_salary(monthly_salary)
@@ -33,7 +33,7 @@ def get_net_income(monthly_salary: int):
     return {"message": "OK", "code": "200", "data": result}
 
 
-@router.get("/calc/q2/loan/{loan_amount}/{annual_interest_rate}/{loan_years}")
+@router.get("/calc/q2/loan/")
 def get_loan(loan_amount: int, annual_interest_rate: float, loan_years: int):
     #  等额本金还款方式
     equal_principal: list = []

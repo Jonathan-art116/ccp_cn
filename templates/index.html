@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cpp-cn</title>
+</head>
+<body>
+<h2>上海税后薪资计算器</h2>
+<form action="/calc/q1/tax/" method="get">
+    <label for="salary">税前收入:</label>
+    <input type="text" id="monthly_salary" name="monthly_salary" required>
+    <input type="submit" value="开始计算">
+</form>
+<h2>贷款计算器</h2>
+<form action="/calc/q2/loan/" method="get">
+    <label for="loan_amount">贷款金额:</label>
+    <input type="text" id="loan_amount" name="loan_amount" required>
+    <label for="loan_amount">贷款利率:</label>
+    <input type="text" id="annual_rate" name="annual_interest_rate" required>
+    <label for="loan_amount">贷款年限:</label>
+    <input type="text" id="loan_years" name="loan_years" required>
+    <input type="submit" value="开始计算">
+</form>
+<h2>1~9区间取3个数字，查找24点</h2>
+<form action="/calc/q3/find_24" method="get">
+    <input type="submit" value="开始查找">
+</form>
+
+</body>
+</html>

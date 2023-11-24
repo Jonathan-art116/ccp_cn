@@ -8,20 +8,3 @@
 # 
 # You should have received a copy of the GNU General Public License along with this program. 
 # If not, see <https://www.gnu.org/licenses/>.
-
-from fastapi import FastAPI
-from fastapi.responses import FileResponse
-from fastapi.templating import Jinja2Templates
-from api.calc import router
-
-templates = Jinja2Templates(directory="templates")
-
-app = FastAPI()
-app.include_router(router)
-
-
-@app.get("/")
-async def root():
-    return FileResponse("templates/index.html", media_type="text/html")
-
-
